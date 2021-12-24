@@ -11,12 +11,17 @@ $fifth : #ffffff;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.phone{display: none;}
 body{
 background-color: $second;
 overflow-x: hidden;
 padding: 10px;
-i{color: red !important;
-cursor: pointer;}
+
+    i{color: red !important;
+    cursor: pointer;}
+
+      
+
  h1{
      color: $fifth;
      text-align: center;
@@ -87,8 +92,12 @@ cursor: pointer;}
         margin-bottom: 10px;
         font-weight: 500 !important;
 
-        &:focus{
-                box-shadow: none !important;
+        &:focus, &:active{
+        background-color: $fifth !important;
+        color: $first !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 500 !important;
             }
 
         &:hover{
@@ -142,3 +151,53 @@ cursor: pointer;}
     }
 
 }
+
+
+@media only screen and (max-width: 600px) {
+  body {
+
+    *{
+        font-size: 0.8rem;
+    }
+    .willDelete{
+        display: none;
+    }
+  }
+}
+
+
+
+
+@media only screen and (max-width: 340px) {
+    body{
+        background-color: $third;
+    }
+    .App{ display: none;}
+
+    
+      .phone{display: block;
+position: relative;
+z-index: 99;
+width: 50vw;
+height: 50vw;
+left: 25vw;
+top: 25vh;
+animation-name: phone;
+animation-duration: 2s;
+animation-timing-function: ease;
+animation-iteration-count: infinite;
+
+}
+
+@keyframes phone {
+  0%   {transform:  rotate( 0deg)}
+  50%  {transform:  rotate( 0deg)}
+  62%  {transform:  rotate( 45deg)}
+  75%  {transform:  rotate( 0deg)}
+  87%  {transform:  rotate( 45deg)}
+  100% {transform:  rotate( 0deg)}
+}
+
+
+}
+

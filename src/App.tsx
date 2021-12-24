@@ -12,6 +12,7 @@ import {
   Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import { type } from "os";
 
 ChartJS.register(
   CategoryScale,
@@ -185,17 +186,18 @@ function App() {
   let yönetimMaxi = maxiJob("yönetim");
   let analizMaxi = maxiJob("analiz");
 
+
   const optionsJob = {
     indexAxis: "y" as const,
     elements: {
       bar: {
-        borderWidth: 2,
+        borderWidth: 3,
       },
     },
     responsive: true,
     plugins: {
       legend: {
-        position: "right" as const,
+        position: "bottom" as const,
       },
       title: {
         display: true,
@@ -252,7 +254,7 @@ function App() {
     responsive: true,
     plugins: {
       legend: {
-        position: "right" as const,
+        position: "bottom" as const,
       },
       title: {
         display: true,
@@ -490,13 +492,13 @@ function App() {
                 <table className="table table-dark table-striped">
                   <thead>
                     <tr>
-                      <th scope="col">No</th>
+                      <th className="willDelete" scope="col">No</th>
                       <th scope="col">Ad Soyad</th>
                       <th scope="col">Grup</th>
                       <th scope="col">Cinsiyet</th>
                       {/* <th scope="col">İşe Giriş</th>
               <th scope="col">İşten Çıkış</th> */}
-                      <th scope="col">Çalışma Süresi</th>
+                      <th className="willDelete" scope="col">Çalışma Süresi</th>
                       <th scope="col">Sil</th>
                     </tr>
                   </thead>
@@ -517,13 +519,13 @@ function App() {
                     return (
                       <tbody key={index + 1}>
                         <tr>
-                          <th>{index + 1} </th>
+                          <th className="willDelete">{index + 1} </th>
                           <td>{person.name}</td>
                           <td>{person.group}</td>
                           <td>{person.gender}</td>
                           {/* <td>{person.enter}</td>
                   <td>{person.escape}</td> */}
-                          <td>
+                          <td className="willDelete">
                             <span className={year ? " " : "d-none "}>
                               {" "}
                               <span>{year}</span> yıl{" "}

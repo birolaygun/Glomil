@@ -6,6 +6,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.phone {
+  display: none;
+}
+
 body {
   background-color: #181821;
   overflow-x: hidden;
@@ -97,9 +101,12 @@ body form button {
   font-weight: 500 !important;
 }
 
-body form button:focus {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+body form button:focus, body form button:active {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500 !important;
 }
 
 body form button:hover {
@@ -151,5 +158,92 @@ body #accordionExample h2 *:active {
   outline: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  body * {
+    font-size: 0.8rem;
+  }
+  body .willDelete {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  body {
+    background-color: #1f1f2b;
+  }
+  .App {
+    display: none;
+  }
+  .phone {
+    display: block;
+    position: relative;
+    z-index: 99;
+    width: 50vw;
+    height: 50vw;
+    left: 25vw;
+    top: 25vh;
+    -webkit-animation-name: phone;
+            animation-name: phone;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes phone {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    62% {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    75% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    87% {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+  }
+  @keyframes phone {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    62% {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    75% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    87% {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+  }
 }
 /*# sourceMappingURL=styles.css.map */
