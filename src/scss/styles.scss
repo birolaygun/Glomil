@@ -1,0 +1,144 @@
+
+$first : #000000;
+$second : #181821;
+$third :  #1f1f2b;
+$fourth : #9496a5;
+$fifth : #ffffff;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+background-color: $second;
+overflow-x: hidden;
+padding: 10px;
+i{color: red !important;
+cursor: pointer;}
+ h1{
+     color: $fifth;
+     text-align: center;
+     margin: 10px;
+ }
+ form{
+
+     label{
+         color: $fourth;
+         margin-top: 10px;
+     }
+
+     input, select{
+
+        background-color: $third !important;
+        color: $fifth !important;
+
+        &:focus {
+            box-shadow: 0 0 0 0.1rem $fourth !important;
+        }
+        
+     }
+
+     .genderRadio{
+         border: 1px solid #ced4da;
+         border-radius: 0.25rem;
+         display: flex;
+         justify-content: space-evenly;
+         height: 38px;
+         background-color: $third;
+
+        input{
+            cursor: pointer;
+             margin-top: 12px;
+            &:focus{
+                box-shadow: none !important;
+                border: none !important;
+            }
+
+            &:active::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+            }
+            &:focus::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+            }
+        }
+
+        label{
+            cursor: pointer;
+            position: relative;
+            margin-top: 6px;
+            padding-right: 5px;
+            top: -2px;
+        }
+     }
+
+     .errors{
+         color: red;
+     }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {filter: invert(1);}
+
+    button{
+
+        background-color: $fifth !important;
+        color: $first !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 500 !important;
+
+        &:focus{
+                box-shadow: none !important;
+            }
+
+        &:hover{
+        background-color: $third !important;
+        color: $fifth !important;
+            }
+    }
+
+ }
+    #accordionExample{
+        background-color: $fifth !important;
+        color: $first !important;
+        outline: none !important;
+
+        &:focus{
+        background-color: $fifth !important;
+        color: $first !important;
+        outline: none !important;
+        box-shadow: none !important;
+        }
+
+        &:active{
+        background-color: $fifth !important;
+        color: $first !important;
+        outline: none !important;
+        box-shadow: none !important;
+        }
+
+        h2 *{
+        background-color: $fifth !important;
+        color: $first !important;
+        outline: none !important;
+        box-shadow: none !important;
+
+            &:focus{
+            background-color: $fifth !important;
+            color: $first !important;
+            outline: none !important;
+            box-shadow: none !important;
+            }
+
+            &:active{
+            background-color: $fifth !important;
+            color: $first !important;
+            outline: none !important;
+            box-shadow: none !important;
+            }
+
+        }
+
+    }
+
+}

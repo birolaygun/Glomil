@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #181821;
+  overflow-x: hidden;
+  padding: 10px;
+}
+
+body i {
+  color: red !important;
+  cursor: pointer;
+}
+
+body h1 {
+  color: #ffffff;
+  text-align: center;
+  margin: 10px;
+}
+
+body form label {
+  color: #9496a5;
+  margin-top: 10px;
+}
+
+body form input, body form select {
+  background-color: #1f1f2b !important;
+  color: #ffffff !important;
+}
+
+body form input:focus, body form select:focus {
+  -webkit-box-shadow: 0 0 0 0.1rem #9496a5 !important;
+          box-shadow: 0 0 0 0.1rem #9496a5 !important;
+}
+
+body form .genderRadio {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 38px;
+  background-color: #1f1f2b;
+}
+
+body form .genderRadio input {
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+body form .genderRadio input:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none !important;
+}
+
+body form .genderRadio input:active::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+body form .genderRadio input:focus::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+body form .genderRadio label {
+  cursor: pointer;
+  position: relative;
+  margin-top: 6px;
+  padding-right: 5px;
+  top: -2px;
+}
+
+body form .errors {
+  color: red;
+}
+
+body form input[type="date"]::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+body form button {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500 !important;
+}
+
+body form button:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+body form button:hover {
+  background-color: #1f1f2b !important;
+  color: #ffffff !important;
+}
+
+body #accordionExample {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  outline: none !important;
+}
+
+body #accordionExample:focus {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+body #accordionExample:active {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+body #accordionExample h2 * {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+body #accordionExample h2 *:focus {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+body #accordionExample h2 *:active {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+/*# sourceMappingURL=styles.css.map */
